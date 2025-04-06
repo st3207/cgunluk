@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gunluk_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".GunlukActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/geri"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBack"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBack"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBack"
+        tools:text="06 Nisan 2025 Cumartesi" />
+
+    <TextView
+        android:id="@+id/textViewDayCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#A1887F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDate"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate"
+        app:layout_constraintTop_toTopOf="@+id/textViewDate"
+        tools:text="(1)" />
+
+    <EditText
+        android:id="@+id/editTextNotes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:gravity="top|start"
+        android:hint="@string/notlar_m"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no"
+        android:autofillHints="none"
+        android:maxWidth="488dp"
+        app:layout_constraintTop_toBottomOf="@id/imageViewBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_max="488dp"
+        app:layout_constraintWidth_percent="0.99" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
